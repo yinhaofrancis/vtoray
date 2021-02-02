@@ -7,12 +7,16 @@
         "clients": [
           {
             "id": "2160d59a-1478-4fed-8de8-e1140479fcbd",
+            "level": 1,
             "alterId": 64
           }
         ]
       },
       "streamSettings": {
         "network":"ws"
+        "wsSettings": {
+            "path": "/ray"
+        }
       }
     }
   ],
