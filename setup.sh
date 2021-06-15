@@ -9,3 +9,4 @@ git clone https://github.com/yinhaofrancis/vtoray.git
 cd vtoray
 sudo rm -f /usr/local/etc/v2ray/config.json
 sudo cp myconfig.json /usr/local/etc/v2ray/config.json
+date -R
