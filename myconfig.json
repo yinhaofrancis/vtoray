@@ -11,7 +11,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": {{uuid1}},
+                        "id": "{{uuid1}}",
                         "level": 1,
                         "alterId": 64
                     }
@@ -29,7 +29,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": {{uuid2}},
+                        "id": "{{uuid2}}",
                         "level": 1,
                         "alterId": 64
                     }
