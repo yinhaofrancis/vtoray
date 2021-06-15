@@ -7,6 +7,7 @@ sudo bash install-release.sh
 sudo mkdir /etc/v2ray
 git clone https://github.com/yinhaofrancis/vtoray.git
 cd vtoray
+bash config.sh
 sudo rm -f /usr/local/etc/v2ray/config.json
-sudo cp myconfig.json /usr/local/etc/v2ray/config.json
+sudo cp currentConfig.json /usr/local/etc/v2ray/config.json
 date -R
