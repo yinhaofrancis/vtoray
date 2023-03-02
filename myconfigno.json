@@ -13,20 +13,11 @@
                     {
                         "id": "{{uuid1}}",
                         "level": 0,
-                        "alterId": 0
+                        "alterId": 32
                     }
                 ]
             },
             "streamSettings": {
-                "security": "tls", // security 要设置为 tls 才会启用 TLS
-                "tlsSettings": {
-                    "certificates": [
-                        {
-                            "certificateFile": "/etc/v2ray/v2ray.crt", // 证书文件
-                            "keyFile": "/etc/v2ray/v2ray.key" // 密钥文件
-                        }
-                    ]
-                }
                 "network": "ws",
                 "wsSettings": {
                     "path": "/ray"
@@ -39,21 +30,12 @@
                 "clients": [
                     {
                         "id": "{{uuid2}}",
-                        "level": 0,
-                        "alterId": 0
+                        "level": 1,
+                        "alterId": 64
                     }
                 ]
             },
             "streamSettings": {
-                "security": "tls", // security 要设置为 tls 才会启用 TLS
-                "tlsSettings": {
-                    "certificates": [
-                        {
-                            "certificateFile": "/etc/v2ray/v2ray.crt", // 证书文件
-                            "keyFile": "/etc/v2ray/v2ray.key" // 密钥文件
-                        }
-                    ]
-                }
                 "network": "ws",
                 "wsSettings": {
                     "path": "/thunder"
