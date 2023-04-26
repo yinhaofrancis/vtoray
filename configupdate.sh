@@ -1,0 +1,1 @@
+sudo cp currentConfig.json /usr/local/etc/v2ray/config.json
