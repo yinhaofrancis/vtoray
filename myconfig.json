@@ -18,45 +18,18 @@
                 ]
             },
             "streamSettings": {
-                "security": "tls", // security 要设置为 tls 才会启用 TLS
+                "security": "tls",
                 "tlsSettings": {
                     "certificates": [
                         {
-                            "certificateFile": "/etc/v2ray/v2ray.crt", // 证书文件
-                            "keyFile": "/etc/v2ray/v2ray.key" // 密钥文件
+                            "certificateFile": "/etc/v2ray/v2ray.crt",
+                            "keyFile": "/etc/v2ray/v2ray.key"
                         }
                     ]
-                }
+                },
                 "network": "ws",
                 "wsSettings": {
                     "path": "/ray"
-                }
-            }
-        },{
-            "port": 16824,
-            "protocol": "vmess",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "{{uuid2}}",
-                        "level": 0,
-                        "alterId": 0
-                    }
-                ]
-            },
-            "streamSettings": {
-                "security": "tls", // security 要设置为 tls 才会启用 TLS
-                "tlsSettings": {
-                    "certificates": [
-                        {
-                            "certificateFile": "/etc/v2ray/v2ray.crt", // 证书文件
-                            "keyFile": "/etc/v2ray/v2ray.key" // 密钥文件
-                        }
-                    ]
-                }
-                "network": "ws",
-                "wsSettings": {
-                    "path": "/thunder"
                 }
             }
         }
