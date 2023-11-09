@@ -14,6 +14,7 @@ fi
 if [ -f $2/v2ray.crt ]; then
     sudo ~/.acme.sh/acme.sh --renew -d $1 --force --ecc
 else
+    sudo ~/.acme.sh/acme.sh --register-account -m yinhaogerault@gmail.com
     sudo ~/.acme.sh/acme.sh --issue -d $1 --standalone -k ec-256 --log
     folder_name="$2"
     if [ -d "${folder_name}" ]; then
