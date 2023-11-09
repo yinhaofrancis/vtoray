@@ -6,15 +6,14 @@
     },
     "inbounds": [
         {
-            "port": 16823,
-            "listen":"0.0.0.0",
+            "port": 443,
             "protocol": "vmess",
             "settings": {
                 "clients": [
                     {
                         "id": "{{uuid1}}",
                         "level": 0,
-                        "alterId": 0
+                        "alterId": 64
                     }
                 ]
             },
@@ -23,8 +22,8 @@
                 "tlsSettings": {
                     "certificates": [
                         {
-                            "certificateFile": "{{crt}}}",
-                            "keyFile": "{{key}}}"
+                            "certificateFile": "{{crt}}",
+                            "keyFile": "{{key}}"
                         }
                     ]
                 },
