@@ -13,3 +13,4 @@ bash config.sh /root/tls
 sudo rm -f /usr/local/etc/v2ray/config.json
 sudo cp currentConfig.json /usr/local/etc/v2ray/config.json
 date -R
+sudo run.sh

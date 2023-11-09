@@ -1,4 +1,5 @@
 UUID1=$(cat /proc/sys/kernel/random/uuid)
+UUID2=$(cat /proc/sys/kernel/random/uuid)
 if [ -z "$1" ]; then
     echo "输入证书文件夹 param 1"
     exit 1
@@ -12,6 +13,6 @@ prefix=$(transform $1)
 echo $prefix
 KEY="$prefix\/v2ray.key"
 CRT="$prefix\/v2ray.crt"
-file=$(sed -e s/{{uuid1}}/${UUID1}/g -e s/{{key}}/${KEY}/g -e s/{{crt}}/${CRT}/g myconfig.json)
+file=$(sed -e s/{{uuid1}}/${UUID1}/g -e s/{{key}}/${KEY}/g -e s/{{crt}}/${CRT}/g -e s/{{quic_key}}/${UUID2}/g myconfig.json)
 echo ${file}>currentConfig.json
 echo $file

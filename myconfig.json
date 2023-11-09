@@ -30,6 +30,13 @@
                 "network": "ws",
                 "wsSettings": {
                     "path": "/ray"
+                },
+                "quicSettings":{
+                    "security": "chacha20-poly1305",
+                    "key":"{{quic_key}}",
+                    "header": {
+                        "type": "dtls"
+                      }
                 }
             }
         }
