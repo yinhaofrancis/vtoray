@@ -6,8 +6,8 @@ fi
 
 sudo bash install_v2ray.sh
 
-sudo bash setupcer.sh $1 /root/tls
-bash config.sh /root/tls
+sudo bash setupcer.sh $1 ~/tls
+sudo bash config.sh ~/tls
 sudo rm -f /usr/local/etc/v2ray/config.json
 sudo cp currentConfig.json /usr/local/etc/v2ray/config.json
 date -R

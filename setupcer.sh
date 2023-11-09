@@ -8,7 +8,6 @@ if [ -z "$2" ]; then
 fi
 if [ ! -f ~/.acme.sh/acme.sh ]; then
     curl  https://get.acme.sh | sh
-    sudo apt-get -y install netcat
 fi
 
 if [ -f $2/v2ray.crt ]; then
