@@ -3,9 +3,9 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-# sudo curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
-sudo curl -O https://raw.githubusercontent.com/yinhaofrancis/fhs-install-v2ray/master/install-release.sh
-sudo bash install-release.sh
+
+sudo bash install_v2ray.sh
+
 sudo bash setupcer.sh $1 /root/tls
 bash config.sh /root/tls
 sudo rm -f /usr/local/etc/v2ray/config.json
