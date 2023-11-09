@@ -2,9 +2,7 @@ if [ -z "$1" ]; then
     echo "输入主机域名"
     exit 1
 fi
-sudo apt install git-all
-sudo apt install unzip
-sudo apt install curl
+
 # sudo curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
 sudo curl -O https://raw.githubusercontent.com/yinhaofrancis/fhs-install-v2ray/master/install-release.sh
 sudo bash install-release.sh
