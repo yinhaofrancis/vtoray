@@ -14,7 +14,7 @@ fi
 if [ -f $2/v2ray.crt ]; then
     sudo ~/.acme.sh/acme.sh --renew -d $1 --force --ecc
 else
-    sudo ~/.acme.sh/acme.sh --issue -d $1 --standalone -k ec-256
+    sudo ~/.acme.sh/acme.sh --issue -d $1 --standalone -k ec-256 --log
     folder_name="$2"
     if [ -d "${folder_name}" ]; then
         echo "文件夹已存在"
@@ -22,7 +22,7 @@ else
         mkdir "$folder_name"
         echo "文件夹已创建"
     fi
-    sudo ~/.acme.sh/acme.sh --installcert -d $1 --fullchainpath $2/v2ray.crt --keypath $2/v2ray.key --ecc
+    sudo ~/.acme.sh/acme.sh --installcert -d $1 --fullchainpath $2/v2ray.crt --keypath $2/v2ray.key --ecc --log
 fi
 
 
